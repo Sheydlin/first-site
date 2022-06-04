@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="Тут указывают теги через запятую для поиска в интернете">
+        <meta name="description" content="Заголовок в поиске">
+        <link rel="shortcut icon" href="https://img2.freepng.ru/20180604/azq/kisspng-outline-of-basketball-backboard-sport-variations-of-basketball-5b1552f548d221.3617241715281241492983.jpg">
+        <link rel="stylesheet" href="style.css">
+        <title>MyFirstTry</title>
+    </head>
+    <body>
+      <div class="nav">
+        <button>Меню</button>
+        <button>Главная</button>
+        <button>Отзывы</button>
+        <button><a href="https://www.youtube.com/channel/UCQPtdJLtrROBX5ulDmLPduA">Ютуб</a></button>
+        <button><a href="https://yandex.ru/">Яндекс</a></button>
+      </div>
+      <div class="header">
+        <h1 id="title">Главный заголовок</h1>
+        <p>Поискова система ситает его главным на странице, поэтому лучше использовать его только один раз.</p>
+        <p>Также заголовок <b>h1-h6</b> занимает всю строку.</p>
+      </div>
+      <div class="text">
+        <h2>Еще немного работы с текстом:</h2>
+         <p>
+            Тег <b>p</b> — это абзац.
+            <br>Тег <b>br</b> — новая строка
+            <br><b>Тег <b>b</b> — жирный шрифт</b>
+            <br><em>Тег <b>em</b> — курсив</em>
+         </p>
+      </div>
+       <p class="ptext">Тег <b>a</b> — ссылка. Атрибут может переводить по ссылке на другой сайт, или к определенному блоку на странице нашего сайта. Например:
+       				<a href="https://youtu.be/PnwqsoT4NE8">Мой ролик по игре ML:BB</a>
+       <br>Если нужно чтобы ссылка открывалась в новой вкладке, используем атрибут <em>target</em>. Например:
+       <a href="https://youtu.be/PnwqsoT4NE8" target="-blank">Вэйл ML:BB</a>
+       <br>Для перехода к определенному блоку, тэгу на сайте, необхожимо присвоить ему уникальный id, затем в атрибуте тэга a указываем что это будет якорь, а не ссылка на другой сайт. Например;
+       <a href="#title">Вернуться в начало</a>
+       </p>
+       <br>
+         <div class="marklist">
+           <h3>Маркированный список</h3>
+           <p>Для создания маркированного списка используется тег <b>ul</b>, а его элементы заключают в тег <b>li</b>. Также в этом списке можно добавлять ссылки. Например:</p>
+           <ul>
+                   <li>Первый элемент списка</li>
+                   <li>Второй элемент списка</li>
+                   <li> <a href="https://ya.ru"><b>Яндекс</b></a> Ссылка на главную странцу Яндекса</li>
+           </ul>
+         </div>
+       			<hr>
+       			<b>hr</b> — тег является болчным и проводит горизонтальную черту в том блоке, в котором находится. Тег не закрывается.
+       			<hr>
+       	<h3>Таблица в HTML</h3>
+       	Для создания таблицы использется тег <b>table</b>, у него также есть шапка - <b>thead</b>,тело - <b>tbody</b>, и подвал - <b>tfoot</b>.
+       	<br><b>tr</b> - строка, <b>th</b>- жирный текст по центру ячейки, <b>td</b> - обычный текст.
+       	<br> Атрибут <em>colspan</em> в теге <b>td</b> объединяет указанное кол-во ячеек. Атрибут <em>border</em> устанавливает рамку нашей таблице.
+       	<table border="1">
+       					<thead>
+       								<tr>
+       										<th>Герои</th>
+       										<th>Кол-во</th>
+       								</tr>
+       					</thead>
+       					<tbody>
+       									<tr>
+       													<td>Стрекли</td>
+       													<td>8</td>
+       									</tr>
+       									<tr>
+       													<td>Маги</td>
+       													<td>9</td>
+       									</tr>
+       									<tr>
+       													<td>Танки</td>
+       													<td>6</td>
+       									</tr>
+       					</tbody>
+       					<tfoot>
+       									<tr>
+       													<td colspan="2">Итог: 23</td>
+       									</tr>
+       					</tfoot>
+       	</table>
+      Используя тег <b>img</b> 	можно добавить изабражение на страницу сайта. Атрибут <em>src</em> отвечает за путь к изображению. Если файл находится на вашем компьютере, то достаточно указать <b>относительный</b> путь - он же имя файла. Если же файл находиться на другом сайте, то и путь нужно указывать <b>абсолютный</b>.
+      <br>Ширина изображения регулируется атрибутом <em>width</em>, а высота атртбутом <em>height</em>.
+      <img src="https://img2.freepng.ru/20180329/ghw/kisspng-emoticon-smiley-wink-emoji-clip-art-emoji-5abc679b27c4e7.9951670115222967311629.jpg" width="300" height="300">
+     <br>Поле ввода добавляется с помощью тега <b>input</b>. Атрибут <em>type</em> - тип поля ввода (text, number, month).
+     <br>
+      <from class="" action="website.html" method="post">
+       <input type="month">
+       <input type="submit" name="" value="Готово">
+       <div class="footer">
+         <h4>Все права защищены.</h4>
+       </div>
+      </from>
+    </body>
+</html>
