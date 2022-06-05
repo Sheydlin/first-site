@@ -1,10 +1,15 @@
 body {
+  background: url(gray.jpg);
   max-width: 960px;
   margin: 0 auto;
 }
 
 table {
-  color: red;
+  color: black;
+}
+
+a {
+  text-decoration: none;
 }
 
 div {
@@ -19,7 +24,21 @@ div {
   background-color: gray;
   margin-top: 20px;
   margin-bottom: 20px;
+  min-height: 55px;
 }
+
+.anav {
+  color: black;
+}
+
+.navbutton {
+  min-height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .header {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -37,18 +56,50 @@ div {
   float: right;
   margin-left: 10px;
   max-width: 200px;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.imggray {
+  float: left;
+  margin: 4px 10px 2px 0px;
+  border: 1px solid white;
+  padding: 3px;
+}
+
+.pimg {
+  font-size: 22px;
+  text-align: justify;
+  line-height: 33px;
+  margin-top: 6px;
+}
+
+.calkulate {
+  min-width: 180px;
+  min-height: 180px;
+  font-style: bold;
+  font-size: 30px;
+}
+
+.divbutton {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.divinput {
+  max-width: 740px;
+  max-height: 200px;
 }
 
 .footer {
   margin-top: 20px;
   margin-bottom: 20px;
   min-height: 40px;
-  max-height: 40px;
-  line-height: 8px;
   font-weight: bold;
   font-size: 20px;
+  padding: 5px 5px 5px 5px;
   color: white;
-  text-align: right;
+  text-align: center;
   background-color: grey;
 }
 
