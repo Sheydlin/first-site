@@ -31,11 +31,11 @@
          </p>
       </div>
        <p class="ptext">Тег <b>a</b> — ссылка. Атрибут может переводить по ссылке на другой сайт, или к определенному блоку на странице нашего сайта. Например:
-       				<a href="https://youtu.be/PnwqsoT4NE8">Мой ролик по игре ML:BB</a>
+       				<a href="https://youtu.be/PnwqsoT4NE8" id="atext">Мой ролик по игре ML:BB</a>
        <br>Если нужно чтобы ссылка открывалась в новой вкладке, используем атрибут <em>target</em>. Например:
-       <a href="https://youtu.be/PnwqsoT4NE8" target="-blank">Вэйл ML:BB</a>
+       <a href="https://youtu.be/PnwqsoT4NE8" id="atext" href=""target="-blank">Вэйл ML:BB</a>
        <br>Для перехода к определенному блоку, тэгу на сайте, необхожимо присвоить ему уникальный id, затем в атрибуте тэга a указываем что это будет якорь, а не ссылка на другой сайт. Например;
-       <a href="#title">Вернуться в начало</a>
+       <a href="#title" id="atext">Вернуться в начало</a>
        </p>
        <br>
          <div class="marklist">
@@ -56,28 +56,43 @@
        	 <br><b>tr</b> - строка, <b>th</b>- жирный текст по центру ячейки, <b>td</b> - обычный текст.
        	 <br> Атрибут <em>colspan</em> в теге <b>td</b> объединяет указанное кол-во ячеек. Атрибут <em>border</em> устанавливает рамку нашей таблице.
       </div>
-       	<table>
+       	<table align="center">
        					<thead>
-       								<tr>
-       										<th>Герои</th><th>Кол-во</th>
-       								</tr>
+       						<tr>
+       							<th>Герой</th>
+                    <th>Сила</th>
+                    <th>Скорость</th>
+                    <th>Ловкость</th>
+                    <th>Интелект</th>
+       						</tr>
        					</thead>
        					<tbody>
-       									<tr>
-       													<td>Стрекли</td><td>8</td>
-       									</tr>
-       									<tr>
-       													<td>Маги</td>
-       													<td>9</td>
-       									</tr>
-       									<tr>
-       													<td>Танки</td><td>6</td>
-       									</tr>
+       						<tr>
+       							<td>Дариус</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>3</td>
+       						</tr>
+       						<tr>
+       							<td>Мия</td>
+       							<td>9</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>1</td>
+       						</tr>
+       						<tr>
+       							<td>Аврора</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>8</td>
+       						</tr>
        					</tbody>
        					<tfoot>
-       									<tr>
-       													<td colspan="2">Итог: 23</td>
-       									</tr>
+       						<tr>
+    								<th colspan="5" id="mlbb">Mobile Ledgends: Bang Bang</th>
+       						</tr>
        					</tfoot>
        	</table>
       <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612527801_5-p-serii-fon-geometriya-5.jpg" class="imggray" height="300">
@@ -99,7 +114,7 @@
   </div>
        <div class="footer">
          <div class="ghprof">
-           <a href="https://github.com/Sheydlin">My GH profile</a>
+           <a href="https://github.com/Sheydlin" id="aghpr">My GH profile</a>
          </div>
          <div class="mail">
             <b>volivrus@mail.ru</b>

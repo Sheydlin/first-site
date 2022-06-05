@@ -20,6 +20,29 @@ a {
   text-decoration: none;
 }
 
+#atext {
+  font-family: Arial;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-shadow:
+		-0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;
+}
+
 div {
   padding: 5px 15px;
 }
@@ -84,8 +107,19 @@ div {
 }
 
 table {
-  border: 1px solid black;
-  
+  border: 1px solid grey;
+  text-align: center;
+}
+
+tr, td {
+  background-color: #696969;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+th {
+  background-color: #808080;
+  padding: 15px;
 }
 
 .imggray {
@@ -130,6 +164,8 @@ table {
 
 .inmonth {
   min-height: 36px;
+  font-style: bold;
+  font-size: 20px;
 }
 
 .footer {
@@ -146,6 +182,10 @@ table {
 
 .ghprof {
   float: left;
+}
+
+#aghpr {
+  color: white;
 }
 
 .mail {
