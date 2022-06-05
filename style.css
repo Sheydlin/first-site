@@ -4,6 +4,14 @@ body {
   margin: 0 auto;
 }
 
+#title {
+  font-size: 43px;
+}
+
+.ptitle {
+  font-size: 21px;
+}
+
 table {
   color: black;
 }
@@ -13,18 +21,20 @@ a {
 }
 
 div {
-  border: 1px solid black;
   padding: 5px 15px;
 }
 
 .nav {
   position: sticky;
   top: 0px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   background-color: gray;
   margin-top: 20px;
   margin-bottom: 20px;
   min-height: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .anav {
@@ -32,11 +42,12 @@ div {
 }
 
 .navbutton {
-  min-height: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  font-style: bold;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .header {
@@ -47,17 +58,34 @@ div {
 }
 
 .text {
+  font-size: 20px;
+  border: 1px solid black;
   float: left;
   margin-right: 10px;
-  max-width: 250px;
+  max-width: 350px;
+}
+
+.ptext {
+  font-size: 20px;
 }
 
 .marklist {
+  border: 1px solid black;
   float: right;
+  font-size: 20px;
   margin-left: 10px;
-  max-width: 200px;
+  max-width: 300px;
   max-height: 200px;
   overflow: auto;
+}
+
+.tabletext {
+  font-size: 22px;
+}
+
+table {
+  border: 1px solid black;
+  
 }
 
 .imggray {
@@ -75,20 +103,33 @@ div {
 }
 
 .calkulate {
-  min-width: 180px;
-  min-height: 180px;
-  font-style: bold;
-  font-size: 30px;
+  padding-left: 0px;
+  max-width: 180px;
+  max-height: 220px;
 }
 
-.divbutton {
-  max-width: 200px;
-  max-height: 200px;
+.divcalkulate-input {
+  display: flex;
+}
+
+.divcalkulate {
+  padding-left: 0px;
+  max-width: 180px;
+  max-height: 220px;
 }
 
 .divinput {
+  font-size: 22px;
   max-width: 740px;
   max-height: 200px;
+}
+
+.divinmonth {
+  margin-left: 228px;
+}
+
+.inmonth {
+  min-height: 36px;
 }
 
 .footer {
@@ -103,6 +144,10 @@ div {
   background-color: grey;
 }
 
-.ptext {
-  font-size: 20px;
+.ghprof {
+  float: left;
+}
+
+.mail {
+  float: right;
 }

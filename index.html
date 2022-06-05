@@ -10,16 +10,16 @@
     </head>
     <body>
       <div class="nav">
-        <button class="navbutton"><a class="anav" href="">Меню</a></button>
-        <button class="navbutton"><a class="anav" href="">Главная</a></button>
-        <button class="navbutton"><a class="anav" href="">Отзывы</a></button>
-        <button class="navbutton"><a class="anav" href="https://www.youtube.com/channel/UCQPtdJLtrROBX5ulDmLPduA">Ютуб</a></button>
-        <button class="navbutton"><a class="anav" href="https://yandex.ru/">Яндекс</a></button>
+        <div class="navbutton"><a class="anav" href="">Меню</a></div>
+        <div class="navbutton"><a class="anav" href="">Главная</a></div>
+        <div class="navbutton"><a class="anav" href="">Отзывы</a></div>
+        <div class="navbutton"><a class="anav" href="https://www.youtube.com/channel/UCQPtdJLtrROBX5ulDmLPduA">Ютуб</a></div>
+        <div class="navbutton"><a class="anav" href="https://yandex.ru/">Яндекс</a></div>
       </div>
       <div class="header">
         <h1 id="title">Главный заголовок</h1>
-        <p>Поискова система ситает его главным на странице, поэтому лучше использовать его только один раз.</p>
-        <p>Также заголовок <b>h1-h6</b> занимает всю строку.</p>
+        <p class="ptitle">Поискова система ситает его главным на странице, поэтому лучше использовать его только один раз.</p>
+        <p class="ptitle">Также заголовок <b>h1-h6</b> занимает всю строку.</p>
       </div>
       <div class="text">
         <h2>Работа с текстом:</h2>
@@ -39,7 +39,7 @@
        </p>
        <br>
          <div class="marklist">
-           <h3>Маркированный список</h3>
+           <h3 align="center">Маркированный список</h3>
            <p>Для создания маркированного списка используется тег <b>ul</b>, а его элементы заключают в тег <b>li</b>. Также в этом списке можно добавлять ссылки. Например:</p>
            <ul>
                    <li>Первый элемент списка</li>
@@ -50,11 +50,13 @@
        			<hr>
        			<b>hr</b> — тег является болчным и проводит горизонтальную черту в том блоке, в котором находится. Тег не закрывается.
        			<hr>
-       	<h3>Таблица в HTML</h3>
-       	Для создания таблицы использется тег <b>table</b>, у него также есть шапка - <b>thead</b>,тело - <b>tbody</b>, и подвал - <b>tfoot</b>.
-       	<br><b>tr</b> - строка, <b>th</b>- жирный текст по центру ячейки, <b>td</b> - обычный текст.
-       	<br> Атрибут <em>colspan</em> в теге <b>td</b> объединяет указанное кол-во ячеек. Атрибут <em>border</em> устанавливает рамку нашей таблице.
-       	<table border="1">
+      <div class="tabletext">
+       	 <h3 align="center">Таблица в HTML</h3>
+       	 Для создания таблицы использется тег <b>table</b>, у него также есть шапка - <b>thead</b>,тело - <b>tbody</b>, и подвал - <b>tfoot</b>.
+       	 <br><b>tr</b> - строка, <b>th</b>- жирный текст по центру ячейки, <b>td</b> - обычный текст.
+       	 <br> Атрибут <em>colspan</em> в теге <b>td</b> объединяет указанное кол-во ячеек. Атрибут <em>border</em> устанавливает рамку нашей таблице.
+      </div>
+       	<table>
        					<thead>
        								<tr>
        										<th>Герои</th><th>Кол-во</th>
@@ -81,19 +83,27 @@
       <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612527801_5-p-serii-fon-geometriya-5.jpg" class="imggray" height="300">
       <p class="pimg">Используя тег <b>img</b> 	можно добавить изабражение на страницу сайта. Атрибут <em>src</em> отвечает за путь к изображению. Если файл находится на вашем компьютере, то достаточно указать <b>относительный</b> путь - он же имя файла. Если же файл находиться на другом сайте, то и путь нужно указывать <b>абсолютный</b>.
       <br>Ширина изображения регулируется атрибутом <em>width</em>, а высота атртбутом <em>height</em>.</p>
-    <div class="divbutton">
-      <button class="calkulate"><a href="calkulate.html">Посчитать?</a></button>
+  <div class="divcalkulate-input">
+    <div class="divcalkulate">
+      <a href="calkulate.html"><img src="calk.png" class="calkulate"></a>
     </div>
     <div class="divinput">
      <br>Поле ввода добавляется с помощью тега <b>input</b>. Атрибут <em>type</em> - тип поля ввода (text, number, month).
      <p>Расчитать возраст: (Временно недоступно)</p>
       <from class="" action="index.html" method="post">
-       <input type="month">
-       <input type="submit" name="" value="Готово">
-   </div>
+        <div class="divinmonth">
+          <input type="month" class="inmonth">
+          <input type="submit" name="" value="Готово" class="inmonth">
+        </div>
+    </div>
+  </div>
        <div class="footer">
-         <a href="https://github.com/Sheydlin">My GH profile</a>
-         <b>volivrus@mail.ru</b>
+         <div class="ghprof">
+           <a href="https://github.com/Sheydlin">My GH profile</a>
+         </div>
+         <div class="mail">
+            <b>volivrus@mail.ru</b>
+         </div>
        </div>
       </from>
     </body>

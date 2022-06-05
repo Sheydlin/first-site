@@ -3,11 +3,17 @@
   <meta charset="utf-8">
   <title>HTML Калькулятор</title>
   <style type="text/css">
+
+    body {
+      background-image: url(math.jpg);
+    }
+
     table {
+      padding: 3px 3px 3px 3px;
       border: 1px solid black;
     }
     #title {
-      color: #0000FF;
+      color: black;
       font: 30px monospace;
     }
     input[type=textfield] {
@@ -15,27 +21,43 @@
       min-width: 217px;
     }
     input[type=reset] {
+      font-style: bold;
+      font-size: 33px;
       min-height: 50px;
       min-width: 70px;
-      background-color: #00FFFF
+      background-color: #808080;
     }
     input[type=reset]:hover {
-      background-color: #008080
+      background-color: #696969;
     }
     input[type=button] {
+      font-style: bold;
       min-width: 70px;
       min-height: 70px;
       font-size: 33px;
-      background-color: #00FFFF
+      background-color: #808080;
     }
     input[type=button]:hover {
-      background-color: #008080
+      background-color: #696969;
     }
+
+   .cal {
+     display: flex;
+     justify-content: center;
+     margin-top: 100px;
+   }
+
+   .divtable {
+     background-color: #A9A9A9;
+   }
+
   </style>
  </head>
  <body>
+   <div class="cal">
   <form name="calculator">
-  <table align="center">
+    <div class="divtable">
+  <table>
     <thead>
       <tr>
        <td id="title"colspan="4">КАЛЬКУЛЯТОР V3.0.0</td>
@@ -105,6 +127,8 @@
         </th>
       </tr>
     </tbody>
+  </div>
   </form>
+</div>
   </body>
 </html>
