@@ -47,6 +47,8 @@ div {
 
 .anav {
   color: black;
+  border: 1px dashed black;
+  color: #C0C0C0;
 }
 
 .anav:hover {
